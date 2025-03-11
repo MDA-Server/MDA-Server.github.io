@@ -1,0 +1,25 @@
+@media screen and (min-width:300px) and (max-width:980px) {
+    .container-div{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        height: fit-content;
+    }
+    .s-div {
+        justify-content: center;
+        align-items: center;
+    } 
+    .f-div {
+        justify-content: center;
+        align-items: center;
+    }
+    .HIW-div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width:300px) and (max-width:849px) {
+    .containerdiv {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+} 
