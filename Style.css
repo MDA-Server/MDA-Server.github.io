@@ -1,0 +1,326 @@
+body {
+    background-color: black; 
+    width: 1340px;
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: white;
+    margin: 0;
+}
+.container-div {
+    height: 610px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+}
+.first-section , .th-section {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.f-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.f-div p:nth-child(1) {
+    font-size: 30px;
+    font-family: Gruppo;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.f-div p:nth-child(2) {
+    font-family: monospace;
+    margin-left: 5px;
+    color: aliceblue;
+}
+.f-div p:nth-child(3) {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: beige;
+    font-family: 'Segoe UI', Tahoma;
+
+}
+.s-div {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    overflow-y: scroll;
+  
+    border-top-right-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.s-div::-webkit-scrollbar {
+    height: auto;
+    width: 5px;
+}
+.s-div::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+.s-div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: grey;
+}
+.s-div::-webkit-scrollbar-button {
+    border-radius: 10px;
+    background-color: grey;
+}
+
+
+.s-div p {
+    margin-left: 5px;
+}
+.s-div p:nth-child(1) {
+    font-family: Gruppo;
+    font-size: 30px;
+    font-weight: bold;
+}
+.title {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.des {
+    font-family: monospace;
+    font-size: 12px;
+}
+.p-section {
+    width: 100%;
+   
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.FREE {
+    font-size: 30px;
+    font-family: Gruppo;
+    font-weight: bold;
+}
+.free {
+    color: rgb(249, 241, 232);
+    font-size: 14px;
+}
+.p-section div {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+} 
+.why-its-free  {
+    font-size: 14px;
+    margin-left: 5px;
+    color: rgb(255, 239, 239);
+    font-family: serif;
+}
+.HIW-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.HIW-div p{
+    margin-left: 10px;
+}
+.HIW-div p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+}
+.HIW-div p:nth-child(2) , .HIW-div p:nth-child(3), .HIW-div p:nth-child(4) {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
+}
+.HIW-div div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+.HIW-div div button {
+    height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid green;
+    width: 90%;
+}
+
+.containerdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+    column-gap: 10px;
+}
+.card {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background:linear-gradient(to bottom right, rgb(174, 209, 255),rgb(9, 9, 148),rgb(225, 78, 102),rgb(197, 0, 0));
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius:200px;
+    box-shadow:0px 5px 0px 0px white,
+    0px 10px 0px 0px #5a4c4c44
+    
+    ;
+}
+
+.containerdiv div:nth-child(2) {
+    background:linear-gradient(to top left, rgb(0, 36, 84),rgb(234, 3, 255),rgb(225, 78, 102),rgb(238, 2, 2));
+}
+.containerdiv div:nth-child(3) {
+    background:linear-gradient(to top right, rgb(202, 29, 255),rgb(81, 27, 85),rgb(225, 78, 102),rgb(238, 2, 2));
+}
+.card::before {
+    content: "";
+    height: 530px;
+    width: 300px;
+    background-color: rgba(154, 189, 214, 0.082);
+    position: absolute;
+    top: -150px;
+    left: -120px;
+    transform: rotate(36deg);  
+    fill-opacity: 0;
+}
+.curv-container {
+    position: absolute;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.curv {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 2px 2px 3px #000000,
+     0px 9px 2px 3px #ffff, 
+    inset 0px -3px 0px 0px #fff
+    ;   
+    background-color: black;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius:50% ;
+    position: relative;
+}
+.curv img {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.curv:after {
+    height: 50px;
+    width: 44px;
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: -44px;
+    
+    border-top-right-radius:150%;
+    box-shadow: 19px -20px 0px 18px black;
+}
+.curv::before {
+    height: 50px;
+    width: 44px;
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    right: -44px;
+    
+    border-top-left-radius:150%;
+    box-shadow: -19px -20px 0px 18px black;
+} 
+.DesC {
+    margin-top: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:Impact;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.RVNmae {
+    margin-top: 30px;
+    margin-left:90px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+.slider {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.img-container , .img-container2 {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    animation: moveRight linear 30s infinite;
+}
+.img-container2 {
+    animation: Moveleft linear 60s infinite;
+}
+.slider img {
+    height: 100%;
+    width: 60px;
+    object-fit: cover;
+}
+@keyframes Moveleft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes moveRight {
+    from {
+        transform: translateX(-0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+    
+}
