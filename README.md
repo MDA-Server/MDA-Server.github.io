@@ -78,10 +78,12 @@ Static or dynamic – add a few lines of code to make your site truly yours. Bui
 
 ## Supported File Types
 
-![HTML](Icon/html.png)
-![CSS](Icon/css-3.png)
-![JS](Icon/js.png)
-![JSON](Icon/json.png)
-![Node.js](Icon/node.png)
-![TXT](Icon/txt-file.png)
-![DOC](Icon/doc.png)
+<p>
+  <img src="Icon/html.png" alt="HTML" width="50">
+  <img src="Icon/css-3.png" alt="CSS" width="50">
+  <img src="Icon/js.png" alt="JS" width="50">
+  <img src="Icon/json.png" alt="JSON" width="50">
+  <img src="Icon/node.png" alt="Node.js" width="50">
+  <img src="Icon/txt-file.png" alt="TXT" width="50">
+  <img src="Icon/doc.png" alt="DOC" width="50">
+</p>
